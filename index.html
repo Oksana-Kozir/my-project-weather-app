@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Lobster&family=Pacifico&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -15,7 +18,36 @@
     <title>Weather App</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row justify-content-center">
+          <div class="col-md-6" style="max-width: 360px">
+            <label for="enterTheCity" class="form-label">Enter the city</label>
+            <form id="search-form"></form>
+              <input
+                type="text"
+                class="form-control enter-The-City"
+                id="enterTheCity"
+                placeholder="Type to search..."
+              />
+              <button type="button" class="btn btn-dark btn-margin">
+                Search
+              </button>
+            </form>
+            <h1 class="current-temperature">☁ 27°C|°F</h1>
+            <h1 class="current-city">Dnipro</h1>
+            <p class="day-of-the-week" id="day-of-the-week">Sunday, 15:17</p>
+            <Ul>
+            <li>Overcast</li>
+            <li>Humidity 46%</li>
+            <li>Winds NE at 10 to 20 mph.</li></Ul>
+            <span><a href="https://github.com/Oksana-Kozir/weather-app-3" target="blank">Open-source code </a> by Oksana kozir</span> 
+            
+          </div>
+          <div class="col-md-4" style="max-width: 240px"></div>
+         </div> 
+      </div>
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>

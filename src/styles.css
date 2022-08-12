@@ -1,3 +1,33 @@
 h1 {
-  color: blue;
+  color: #202124;
+  font-family: "Lobster", cursive;
+  font: 400;
+  font-size: 30px;
+}
+p {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+}
+
+ul {
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 20px;
+  list-style: none;
+}
+.btn-margin {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #adb5bd;
+  border-radius: 5px;
+  background: #ced4da;
+}
+.form-label {
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 20px;
 }
