@@ -36,19 +36,19 @@
                   Search
                 </button>
               </form>
-              <h1 class="current-temperature">☁ 27 °C|<a href="#" class="faren">°F</a></h1>
-              <h1 class="current-city">Dnipro</h1>
-              <p class="day-of-the-week" id="day-of-the-week">Sunday, 15:17</p>
+              <h1 class="current-temperature">☁ <strong id=temperature></strong><span class="units"> °C|<a href="#" class="faren">°F</a></span></h1>
+              <h1 class="current-city" id="city"></h1>
+              <p>Last updated: </br> <span  class="day-of-the-week" id="date"></span></p>
               <Ul>
-              <li>Overcast</li>
-              <li>Humidity 46%</li>
-              <li>Winds NE at 10 to 20 mph.</li></Ul>
+              <li id="description"></li>
+              <li>Humidity <span id="humidity"></span>%</li>
+              <li>Winds <span id="wind"></span> km/h</li></Ul>
               
             </div>
             <div class="col-md-4" style="max-width: 240px"></div>
          </div> 
       </div>
-      <span><a href="https://github.com/Oksana-Kozir/weather-app-3" target="blank">Open-source code </a> by Oksana kozir</span> 
+      <span><a href="https://github.com/Oksana-Kozir/weather-app-3" target="blank">Open-source code </a> by Oksana Kozir</span> 
               
     </div>
     <script src="src/app.js"></script>

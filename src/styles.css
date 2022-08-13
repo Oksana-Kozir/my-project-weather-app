@@ -5,10 +5,14 @@ h1 {
   font-size: 40px;
 }
 p {
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 20px;
+}
+
+.day-of-the-week {
   font-family: "Lobster", cursive;
   font-size: 28px;
 }
-
 ul {
   font-family: "Edu TAS Beginner", cursive;
   font-size: 20px;
@@ -41,4 +45,8 @@ li:first-letter {
 .faren {
   color: #202124;
   text-decoration: none;
+}
+.day-of-the-week {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
 }
