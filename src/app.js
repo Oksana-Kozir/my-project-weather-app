@@ -23,27 +23,51 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = date.getDay();
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let days = ["Sunday", "Monday", "Tuesday"];
+
   let forecastHTML = "";
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 3) {
+      forecastHTML =
+        forecastHTML +
+        `
               <div class="card mb-3" style="max-width: 200px;">
                 <div class="row g-0">
-                   <h5 class="card-title">${day}</h5>
+                   <h5 class="card-title">${formatDay(forecastDay.dt)}</h5>
                   <div class="col-md-8">
-                    <img src="http://openweathermap.org/img/wn/10d@2x.png" class="img-fluid rounded-start" alt="" id="">
+                    <img src="http://openweathermap.org/img/wn/${
+                      forecastDay.weather[0].icon
+                    }@2x.png" class="img-fluid rounded-start" alt="" id="">
                   </div>
                   <div class="col-md-4">                 
-                      <p class="card-text">21°</p>
-                      <p class="card-text"><small class="text-muted">14°</small></p>
+                      <p class="card-text">${Math.round(
+                        forecastDay.temp.max
+                      )}°</p>
+                      <p class="card-text"><small class="text-muted">${Math.round(
+                        forecastDay.temp.min
+                      )}°</small></p>
                   </div>
                 </div>
               </div>`;
+    }
   });
 
   forecastElement.innerHTML = forecastHTML;
