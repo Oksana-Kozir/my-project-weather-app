@@ -9,10 +9,6 @@ p {
   font-size: 20px;
 }
 
-.day-of-the-week {
-  font-family: "Lobster", cursive;
-  font-size: 28px;
-}
 ul {
   font-family: "Edu TAS Beginner", cursive;
   font-size: 20px;
@@ -49,4 +45,18 @@ li:first-letter {
 .day-of-the-week {
   font-family: "Lobster", cursive;
   font-size: 28px;
+}
+.current-temperature {
+  color: #202124;
+  font-family: "Lobster", cursive;
+  font-size: 52px;
+  line-height: 2;
+}
+
+.units {
+  color: #202124;
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  top: -26px;
+  position: relative;
 }

@@ -31,6 +31,7 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -39,6 +40,7 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
+
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
@@ -47,7 +49,7 @@ function displayTemperature(response) {
 let apiKey = "1aab64290751190d2719fa18bf8fa94d";
 let units = "metric";
 let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
-let city = "Lviv";
+let city = "Dnipro";
 let apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=${units}`;
 
 axios.get(apiUrl).then(displayTemperature);
