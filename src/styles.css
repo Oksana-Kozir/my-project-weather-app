@@ -88,6 +88,8 @@ li:first-letter {
 .card-text {
   color: #ee693f;
   font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 .card {
