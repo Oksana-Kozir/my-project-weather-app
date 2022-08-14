@@ -9,6 +9,10 @@ p {
   font-size: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   font-family: "Edu TAS Beginner", cursive;
   font-size: 20px;
@@ -38,7 +42,7 @@ li:first-letter {
   font-family: "Edu TAS Beginner", cursive;
   font-size: 20px;
 }
-.faren {
+.fahrenheit .celsius {
   color: #202124;
   text-decoration: none;
 }
@@ -59,4 +63,15 @@ li:first-letter {
   font-size: 20px;
   top: -26px;
   position: relative;
+}
+
+.active {
+  color: #202124;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+  color: #202124;
 }
