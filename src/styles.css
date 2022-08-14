@@ -75,3 +75,21 @@ li:first-letter {
   text-decoration: none;
   color: #202124;
 }
+
+.card-title {
+  text-align: center;
+  color: #ee693f;
+  font-family: "Lobster", cursive;
+  font-size: 26px;
+  border-bottom: 1px solid #ee693f;
+  border-radius: 3px;
+}
+
+.card-text {
+  color: #ee693f;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #ced4f5;
+}
